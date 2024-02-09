@@ -15,7 +15,6 @@ use App\Http\Controllers\UsersController;
 */
 
 //Route::resources(['users' => UsersController::class]);
-
  Route::get('/', [UsersController::class, 'index'])->name('users.index');
 Route::post('/users', [UsersController::class, 'store'])->name('users.store');
 Route::get('/users/{id}/edit', [UsersController::class, 'edit'])->name('users.edit');
